@@ -12,8 +12,8 @@ import boto3
 import datetime
 
 dynamodb = boto3.resource('dynamodb', 
-    aws_access_key_id='AKIAIISHT6IO4KCJ25SQ',
-    aws_secret_access_key='qIp+cdKWuglaLG6+jbhR83pvV1wBPvrFNtfz4laf',
+    aws_access_key_id='your-access-key-id',
+    aws_secret_access_key='your-secret-access-key',
     region_name='us-east-1'
     )
 
