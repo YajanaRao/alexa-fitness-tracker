@@ -1,0 +1,130 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "fitness tracker",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SetGoal",
+                    "slots": [
+                        {
+                            "name": "calories",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "timeline",
+                            "type": "theString"
+                        }
+                    ],
+                    "samples": [
+                        "my goal is to burn {calories} calories for {timeline}",
+                        "{timeline} {calories} today",
+                        "{calories} calories {timeline}",
+                        "i will burn {calories} calories {timeline}",
+                        "my goal is to burn {calories} calories {timeline}",
+                        "I would like to burn down to {calories} calories {timeline}",
+                        "I need to burn {calories} calories {timeline}",
+                        "I shall burn {calories} calories {timeline}",
+                        "I would like to burn down to {calories}",
+                        "I would like to burn {calories} calories",
+                        "I want to burn {calories} calories"
+                    ]
+                },
+                {
+                    "name": "ListGoals",
+                    "slots": [],
+                    "samples": [
+                        "what's my goal",
+                        "goals",
+                        "what are my goals",
+                        "show me goals",
+                        "show goals",
+                        "show my goals",
+                        "list my goals",
+                        "list goals",
+                        "get my all goal",
+                        "list all goals",
+                        "get all goals"
+                    ]
+                },
+                {
+                    "name": "LeaderBoard",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "LogCalorie",
+                    "slots": [
+                        {
+                            "name": "act_calories_burnt",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "burnt {act_calories_burnt} calories yesterday",
+                        "burnt {act_calories_burnt} calories today",
+                        "burnt {act_calories_burnt} calories",
+                        "{act_calories_burnt}",
+                        "{act_calories_burnt} calories",
+                        "I have burnt {act_calories_burnt} calories "
+                    ]
+                },
+                {
+                    "name": "GetCalorie",
+                    "slots": [
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "show calorie of {date}",
+                        "tell me calorie on {date}",
+                        "tell me calorie",
+                        "show calorie",
+                        "get calorie of {date}",
+                        "get calorie"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "theString",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "tomarrow",
+                                "synonyms": [
+                                    "next day"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "today",
+                                "synonyms": [
+                                    "this day"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
